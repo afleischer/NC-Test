@@ -1,10 +1,33 @@
-.cover {
-  width: 200vw;
+.cover-container {
+  width: 185vw;
   height: 100vh;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  .vertical-button {
+    background: green;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 85vw;
+
+    .chevron-wrapper {
+      height: 32px;
+      width: 32px;
+
+      svg#icon-chevron-right {
+        fill: greenyellow;
+      }
+    }
+  }
 }
 
-.content {
+.conver-content {
   width: 85vw;
   height: 100vh;
   background: greenyellow;
