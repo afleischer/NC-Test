@@ -30,6 +30,7 @@
 .cover-content {
   width: 85vw;
   height: 100vh;
-  background: greenyellow;
+  background: url("../static/images/bg-cover.jpg") no-repeat;
+  background-size: cover;
   position: absolute;
 }
