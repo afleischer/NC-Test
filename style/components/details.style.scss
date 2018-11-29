@@ -1,8 +1,8 @@
 .details-content {
 
   top: 0;
-  left: 42px;
-  padding: 10px;
+  left: 0;
+  padding: 42px;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -10,7 +10,31 @@
   background-size: cover;
 }
 
+.personal {
+  display: grid;
+  grid-template-areas: "picture info";
+  grid-template-rows: 218px;
+  grid-template-columns: 218px 420px;
+}
+
+
+.portrait {
+  display: flex;
+  grid-area: picture;
+  flex-direction: column;
+  justify-content: center;
+  label {
+
+  }
+}
+
 img#Portrait {
-  height: 200px;
-  //height: 92px;
+  width: 200px;
+}
+
+.name-title {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
