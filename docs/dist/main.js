@@ -86,7 +86,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "body{margin:0;padding:0;width:100vw;max-height:100vh;overflow-y:hidden;background:orange}.cover-container{width:185vw;height:100vh;position:relative;display:flex;justify-content:space-between}.cover-container .vertical-button{background:green;height:100%;display:flex;flex-direction:column;justify-content:center;position:absolute;top:0;bottom:0;left:85vw}.cover-container .vertical-button .chevron-wrapper{height:32px;width:32px}.cover-container .vertical-button .chevron-wrapper svg#icon-chevron-right{fill:#adff2f}.conver-content{width:85vw;height:100vh;background:#adff2f;position:absolute}", ""]);
+exports.push([module.i, "body{position:relative;margin:0;padding:0;max-width:100vw;min-width:100vw;max-height:100vh;overflow-y:hidden;background:orange}.details-content{top:0;left:42px;padding:10px;position:fixed}img#Portrait{height:200px}.cover-container{width:185vw;height:100vh;position:absolute;display:flex;justify-content:space-between}.cover-container .vertical-button{background:green;height:100%;display:flex;flex-direction:column;justify-content:center;position:absolute;top:0;bottom:0;left:85vw}.cover-container .vertical-button .chevron-wrapper{height:32px;width:32px}.cover-container .vertical-button .chevron-wrapper svg#icon-chevron-right{fill:#adff2f}.cover-content{width:85vw;height:100vh;background:#adff2f;position:absolute}", ""]);
 
 // exports
 

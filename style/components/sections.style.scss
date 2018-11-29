@@ -1,7 +1,7 @@
 .cover-container {
   width: 185vw;
   height: 100vh;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: space-between;
 
@@ -27,7 +27,7 @@
   }
 }
 
-.conver-content {
+.cover-content {
   width: 85vw;
   height: 100vh;
   background: greenyellow;

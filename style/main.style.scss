@@ -1,11 +1,14 @@
 body {
+  position: relative;
   margin:0;
   padding: 0;
-  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
   max-height: 100vh;
   overflow-y: hidden;
   background: orange;
 }
 
  /** custom imports */
+@import 'components/details.style';
 @import 'components/sections.style';
