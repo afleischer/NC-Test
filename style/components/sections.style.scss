@@ -1,33 +1,12 @@
-.sections-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  min-width: 115vw;
-  min-height: 100vh;
-  overflow-y: hidden;
-  overflow-x: scroll;
-}
-
-.section-details {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
+.cover {
+  width: 200vw;
   height: 100vh;
-  background: orange;
+  position: relative;
 }
 
-.section-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
+.content {
   width: 85vw;
   height: 100vh;
   background: greenyellow;
+  position: absolute;
 }
-
-.empty-spacer {
-
-
-}
-
