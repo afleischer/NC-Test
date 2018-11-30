@@ -1,3 +1,4 @@
+
 .cover-container {
   width: 85vw;
   height: 100vh;
@@ -10,10 +11,14 @@
   &.opened {
     transform: translate(-100%, 0);
   }
+
+  .sub-title {
+    font-family: $font-family-text;
+  }
 }
 
 .vertical-button {
-  background: green;
+  background: $color-primary;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -23,28 +28,34 @@
   bottom: 0;
   left: 85vw;
   cursor: pointer;
+  width: 64px;
+  border-left: $color-accent 9px solid;
 
   .chevron-wrapper {
-    height: 32px;
-    width: 32px;
+    height: 64px;
+    width: 64px;
 
     svg#icon-chevron-right {
-      fill: greenyellow;
+      fill: $color-accent;
     }
   }
 }
 
 .cover-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 85vw;
   height: 100vh;
   background: url("../static/images/bg-cover.jpg") no-repeat;
   background-size: cover;
   position: absolute;
-}
-
-.logo-wrapper {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logo-wrapper {
+  width: 420px;
 }

@@ -1,19 +1,23 @@
 .details-content {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
   top: 0;
   left: 0;
-  padding: 42px;
+  padding: 24px 96px;
   position: fixed;
   width: 100vw;
   height: 100vh;
   background: url("../static/images/bg.jpg") no-repeat;
   background-size: cover;
+  font-family: $font-family-text;
 }
 
 .personal {
   display: grid;
   grid-template-areas: "picture info";
-  grid-template-rows: 218px;
+  grid-template-rows: 254px;
   grid-template-columns: 218px 420px;
 }
 
@@ -29,7 +33,7 @@
 }
 
 img#Portrait {
-  width: 200px;
+  width: 100%;
 }
 
 .name-title {
@@ -37,4 +41,18 @@ img#Portrait {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.name {
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-logo-wrapper {
+  width: 120px;
 }

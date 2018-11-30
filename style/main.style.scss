@@ -1,6 +1,6 @@
 
 /**
- * Dependencies
+ * Third Party Dependencies
  */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -11,6 +11,13 @@
 
 @import '../node_modules/bootstrap/scss/reboot';
 
+/**
+ * Vars
+ */
+
+$color-accent: rgb(103, 175, 75);
+$color-primary: rgb(168, 216, 130);
+$font-family-text: 'Raleway', sans-serif;
 
 /**
  * Base Config
