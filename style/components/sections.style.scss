@@ -1,28 +1,35 @@
 .cover-container {
-  width: 185vw;
+  width: 85vw;
   height: 100vh;
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: space-between;
+  transform: translate(0, 0);
+  transition: all 0.6s ease-in-out;
 
-  .vertical-button {
-    background: green;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 85vw;
+  &.opened {
+    transform: translate(-100%, 0);
+  }
+}
 
-    .chevron-wrapper {
-      height: 32px;
-      width: 32px;
+.vertical-button {
+  background: green;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 85vw;
+  cursor: pointer;
 
-      svg#icon-chevron-right {
-        fill: greenyellow;
-      }
+  .chevron-wrapper {
+    height: 32px;
+    width: 32px;
+
+    svg#icon-chevron-right {
+      fill: greenyellow;
     }
   }
 }

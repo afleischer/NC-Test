@@ -4,7 +4,7 @@
         <title>Newcomb</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="./dist/main.js" type="javascript" ></script>
+        <script src="./dist/main.js" ></script>
     </head>
     <body>
         <div class="details-content">
@@ -25,7 +25,7 @@
 
             </div>
         </div>
-        <div class="cover-container">
+        <div id="CoverContainer" class="cover-container">
             <div class="cover-content">
                 <div class="logo-wrapper">
                     <svg version="1.1" id="Layer_1" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 360 180" style="enable-background:new 0 0 360 180;" xml:space="preserve">
@@ -141,21 +141,28 @@
                                     V68.03V15.84H260.38z M183.8,55.13l25.24-25.5l25.67,25.5H183.8z"/>
                             </g>
                         </g>
-                        </svg>
-
+                    </svg>
                 </div>
             </div>
-            <div class="chevron">
-                <div class="vertical-button">
-                    <div class="chevron-wrapper">
-                        <svg id="icon-chevron-right" height="100%" width="100%" viewBox="0 0 19 28">
-                            <title>chevron-right</title>
-                            <path d="M17.297 13.703l-11.594 11.594c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.594c-0.391-0.391-0.391-1.016 0-1.406l8.297-8.297-8.297-8.297c-0.391-0.391-0.391-1.016 0-1.406l2.594-2.594c0.391-0.391 1.016-0.391 1.406 0l11.594 11.594c0.391 0.391 0.391 1.016 0 1.406z"></path>
-                        </svg>
-                    </div>
+            <div class="vertical-button" onclick="toggleCover()">
+                <div class="chevron-wrapper">
+                    <svg id="icon-chevron-right" height="100%" width="100%" viewBox="0 0 19 28">
+                        <title>chevron-right</title>
+                        <path d="M17.297 13.703l-11.594 11.594c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.594c-0.391-0.391-0.391-1.016 0-1.406l8.297-8.297-8.297-8.297c-0.391-0.391-0.391-1.016 0-1.406l2.594-2.594c0.391-0.391 1.016-0.391 1.406 0l11.594 11.594c0.391 0.391 0.391 1.016 0 1.406z"></path>
+                    </svg>
                 </div>
             </div>
         </div>
+    <script>
+        const COVER_CONTAINER = document.getElementById('CoverContainer');
 
+        function toggleCover() {
+            if (COVER_CONTAINER.className.match("opened")) {
+                COVER_CONTAINER.className = COVER_CONTAINER.className.replace(" opened", "")
+            } else {
+                COVER_CONTAINER.className = COVER_CONTAINER.className.concat(" opened")
+            }
+        }
+    </script>
     </body>
 </html>
