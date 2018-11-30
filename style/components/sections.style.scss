@@ -46,7 +46,8 @@
 .cover-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 4rem;
   align-items: center;
   width: 85vw;
   height: 100vh;
