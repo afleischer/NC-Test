@@ -11,11 +11,11 @@
   &.opened {
     transform: translate(-100%, 0);
   }
+}
 
-  .sub-title {
-    font-size: 1.4em;
-    font-family: $font-family-text;
-  }
+.sub-title {
+  font-size: 1.4em;
+  font-family: $font-family-text;
 }
 
 .vertical-button {
@@ -48,6 +48,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 4rem;
+  padding-left: 4rem;
   align-items: center;
   width: 85vw;
   height: 100vh;
@@ -61,4 +62,27 @@
 
 .logo-wrapper {
   width: 42rem;
+}
+
+@media (max-width: 561px) {
+  .logo-wrapper {
+    width: 32rem;
+  }
+  .sub-title {
+    font-size: 0.8em;
+  }
+
+  .cover-content {
+    justify-content: center;
+    padding-top: 0;
+    padding-left: 0;
+    background: url("../static/images/bg-cover-sm.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 720px) and (min-width: 562px) {
+  .logo-wrapper {
+    width: 32rem;
+  }
 }
